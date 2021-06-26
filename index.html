@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
+<title>Title</title>
+</head>
+<body>
+    <div class=" card mx-auto w-50 ">
+        <div class=" card-header bg-primary text-white text-center">BMI Calculator</div>
+        <div class=" card-body">
+            <form onsubmit="return false">
+                <div class=" form-group">
+                    <label for="Height">Height</label>
+                    <input class=" w-75 form-control" type="text" id="Height" placeholder="Enter your height in feet">
+                </div>
+                <div class=" form-group">
+                    <label for="Height">Weight</label>
+                    <input class=" w-75 form-control" type="text" id="Weight" placeholder="Enter your Weight in KG ">
+                </div>
+                <button class=" btn btn-primary text-uppercase" onclick="getBMI()">Submit</button>
+            </form>
+            <h4 class=" pt-3">Result: 
+                <span class=" text-danger" id="ResultRed"></span> 
+                <span class="  text-danger" id="ResultRedD"> </span>
+                <span class=" text-success" id="ResultGreen"></span> 
+                <span class="  text-success" id="ResultGreenD"> </span>
+            </h4>
+            <h5 id="Sugg" class=" text-success"></h5>
+
+        </div>
+        <div class=" bg-info text-center text-white card-footer text-capitalize">an ideal BMI is in the 18 to 25 range</div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
